@@ -1,5 +1,7 @@
 # go-memstore
 
+In memory storage for storing structs based on a compound index
+
 # Install
 
 ```sh
@@ -17,8 +19,8 @@ First create a struct that you want to store and add necessary field tags to tel
 // SimpleStruct simple struct that a store will be generated
 // memstore:generate
 type SimpleStruct struct {
-	Foo int `memstore:"index"`
-	Bar int `memstore:"index"`
+	Foo int `memstore:"index"` // This will be part of the index
+	Bar int `memstore:"index"`  // This will be part of the index
 	Biz string
 	Val float64
 }
