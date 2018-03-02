@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Applifier/go-memstore"
+	memstore "github.com/Applifier/go-memstore"
 )
 
 func memStoreGenerateSimpleStructKey(s SimpleStruct) string {

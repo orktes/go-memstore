@@ -12,7 +12,7 @@ import (
 
 	"text/template"
 
-	"github.com/Applifier/go-memstore/parser"
+	"github.com/orktes/go-memstore/parser"
 )
 
 var buildTags = flag.String("build_tags", "", "build tags to add to generated file")
@@ -34,7 +34,7 @@ var tmpl = template.Must(template.New("generated_file").Funcs(fns).Parse(`
 		"strconv"
 		"strings"
 
-		"github.com/Applifier/go-memstore"
+		"github.com/orktes/go-memstore"
 	)
 
 	{{ define "struct" }}

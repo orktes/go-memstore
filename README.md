@@ -3,7 +3,7 @@
 # Install
 
 ```sh
-go get -u github.com/Applifier/go-memstore/...
+go get -u github.com/orktes/go-memstore/...
 
 ```
 
