@@ -22,6 +22,24 @@ type SimpleStruct struct {
 	Biz string
 	Val float64
 }
+
+
+func main() {
+	store := NewSimpleStructMemStore()
+
+	insert := SimpleStruct{
+		Foo: 1,
+		Bar: 2,
+		Biz: "foobarbiz",
+		Val: 0.56,
+	}
+	store.Insert(insert)
+
+	res, _ := store.Get(SimpleStructMemStoreQuery{Foo: 1, Bar: 2})
+	fmt.Printf("%+v\n", res)
+}
+
+
 ```
 
 Then use go generate to generate memstore for the struct
